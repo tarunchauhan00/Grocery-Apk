@@ -1,15 +1,15 @@
-// /app/index.tsx
+// /app/productList.tsx
 import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 import { useRouter } from 'expo-router';
 
-export default function Index() {
+export default function ProductList() {
   const router = useRouter();
 
   return (
     <View style={styles.container}>
-      {/* <Text style={styles.title}>Welcome to the Home Screen!</Text> */}
-      <Button title="Go to Login" onPress={() => router.push('/home')} />
+      <Text style={styles.title}>Product List Screen</Text>
+      <Button title="View Product Details" onPress={() => router.push('/productDetails')} />
     </View>
   );
 }
